@@ -1,1 +1,1 @@
-# project_mgupp
+# MGUPP site
