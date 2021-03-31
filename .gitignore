@@ -2,3 +2,5 @@ db.sqlite3
 *.css
 *.map
 *.js
+.vscode/
+photos/
