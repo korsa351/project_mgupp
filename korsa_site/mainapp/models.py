@@ -2,8 +2,8 @@ from django.db import models
 from django.db.models.fields import related
 from django.urls import reverse
 
-#Start DB University Gymnastics
 
+#Start DB University Gymnastics
 
 class Meets(models.Model):
     Meet_Date = models.DateField('Дата встречи')
@@ -45,7 +45,7 @@ class University_Meet_Participation(models.Model):
 
 
 class Addresses(models.Model):
-    Address = models.CharField('Детальный адрес', max_length=100)
+    Address = models.CharField('Детальный адрес', max_length=50)
 
     class Meta:
         verbose_name = "Адрес"
@@ -58,7 +58,7 @@ class Addresses(models.Model):
 class Gymnasts(models.Model):
     Gymnast_Name = models.CharField('Имя гимнаста', max_length=50)
     Gymnast_Hometown = models.CharField('Родной город', max_length=50)
-    Gymnast_Address = models.ManyToManyField(Addresses, through='Addresses_Gymnasts')
+    Gymnast_Address = models.ForeignKey(Addresses, on_delete=models.CASCADE)
     Gymnast_Photo = models.ImageField('Фото', upload_to='photos')
     Other_Gymnast_Details = models.TextField('Детали', blank=True)
     University_ID = models.ForeignKey(University, on_delete=models.CASCADE)
@@ -69,15 +69,3 @@ class Gymnasts(models.Model):
 
     def __str__(self) -> str:
         return self.Gymnast_Name
-
-
-class Addresses_Gymnasts(models.Model):
-    Address_ID = models.ForeignKey(Addresses, on_delete=models.CASCADE)
-    Gymnast_ID = models.ForeignKey(Gymnasts, on_delete=models.CASCADE)
-
-    class Meta: 
-        verbose_name = "Адрес Участника"
-        verbose_name_plural = "Адреса Участников"
-
-    #def __str__(self) -> str:
-    #    return self.Gymnast_ID
