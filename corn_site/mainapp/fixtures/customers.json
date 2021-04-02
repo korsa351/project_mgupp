@@ -1,0 +1,182 @@
+[
+    {
+        "model": "mainapp.customers",
+        "pk": 1,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test1@ya.ru",
+            "customer_addres": "Moscow1",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 2,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test2@ya.ru",
+            "customer_addres": "Moscow2",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 3,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test3@ya.ru",
+            "customer_addres": "Moscow3",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 4,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test4@ya.ru",
+            "customer_addres": "Moscow4",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 5,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test5@ya.ru",
+            "customer_addres": "Moscow5",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 6,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test6@ya.ru",
+            "customer_addres": "Moscow6",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 7,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test7@ya.ru",
+            "customer_addres": "Moscow7",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 8,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test8@ya.ru",
+            "customer_addres": "Moscow8",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 9,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test9@ya.ru",
+            "customer_addres": "Moscow9",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 10,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test10@ya.ru",
+            "customer_addres": "Moscow10",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 11,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test11@ya.ru",
+            "customer_addres": "Moscow11",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 12,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test12@ya.ru",
+            "customer_addres": "Moscow12",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 13,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test13@ya.ru",
+            "customer_addres": "Moscow13",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 14,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test14@ya.ru",
+            "customer_addres": "Moscow14",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 15,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test15@ya.ru",
+            "customer_addres": "Moscow15",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 16,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test16@ya.ru",
+            "customer_addres": "Moscow16",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 17,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test17@ya.ru",
+            "customer_addres": "Moscow17",
+            "customer_payment_method_details": "cash"
+        }
+    },
+    {
+        "model": "mainapp.customers",
+        "pk": 18,
+        "fields": {
+            "customer_phone": 999999999,
+            "customer_email": "test18@ya.ru",
+            "customer_addres": "Moscow18",
+            "customer_payment_method_details": "cash"
+        }
+    }
+]

@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mainapp.events",
+        "pk": 1,
+        "fields": {
+            "event_type_code": 1,
+            "event_name": "Мертвые души",
+            "event_start_date": "2020-10-09",
+            "event_end_date": "2020-10-10"
+        }
+    },
+    {
+        "model": "mainapp.events",
+        "pk": 2,
+        "fields": {
+            "event_type_code": 2,
+            "event_name": "Идиот",
+            "event_start_date": "2020-10-09",
+            "event_end_date": "2020-10-10"
+        }
+    },
+    {
+        "model": "mainapp.events",
+        "pk": 3,
+        "fields": {
+            "event_type_code": 3,
+            "event_name": "Преступление и наказание",
+            "event_start_date": "2020-10-09",
+            "event_end_date": "2020-10-10"
+        }
+    },
+    {
+        "model": "mainapp.events",
+        "pk": 4,
+        "fields": {
+            "event_type_code": 4,
+            "event_name": "Божественная комедия",
+            "event_start_date": "2020-10-09",
+            "event_end_date": "2020-10-10"
+        }
+    },
+    {
+        "model": "mainapp.events",
+        "pk": 5,
+        "fields": {
+            "event_type_code": 5,
+            "event_name": "Мастер и маргарита",
+            "event_start_date": "2020-10-09",
+            "event_end_date": "2020-10-10"
+        }
+    },
+    {
+        "model": "mainapp.events",
+        "pk": 6,
+        "fields": {
+            "event_type_code": 6,
+            "event_name": "Три мушкетера",
+            "event_start_date": "2020-10-09",
+            "event_end_date": "2020-10-10"
+        }
+    },
+    {
+        "model": "mainapp.events",
+        "pk": 7,
+        "fields": {
+            "event_type_code": 7,
+            "event_name": "Горе от ума",
+            "event_start_date": "2020-10-09",
+            "event_end_date": "2020-10-10"
+        }
+    },
+    {
+        "model": "mainapp.events",
+        "pk": 8,
+        "fields": {
+            "event_type_code": 8,
+            "event_name": "Шинель",
+            "event_start_date": "2020-10-09",
+            "event_end_date": "2020-10-10"
+        }
+    },
+    {
+        "model": "mainapp.events",
+        "pk": 9,
+        "fields": {
+            "event_type_code": 9,
+            "event_name": "Повелитель мух",
+            "event_start_date": "2020-10-09",
+            "event_end_date": "2020-10-10"
+        }
+    },
+    {
+        "model": "mainapp.events",
+        "pk": 10,
+        "fields": {
+            "event_type_code": 10,
+            "event_name": "Насекомое",
+            "event_start_date": "2020-10-09",
+            "event_end_date": "2020-10-10"
+        }
+    },
+    {
+        "model": "mainapp.events",
+        "pk": 11,
+        "fields": {
+            "event_type_code": 11,
+            "event_name": "Левша",
+            "event_start_date": "2020-10-09",
+            "event_end_date": "2020-10-10"
+        }
+    }
+]

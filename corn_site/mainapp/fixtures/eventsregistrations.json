@@ -1,0 +1,156 @@
+[
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 1,
+        "fields": {
+            "customer_id": 1,
+            "event_id": 3,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 2,
+        "fields": {
+            "customer_id": 4,
+            "event_id": 6,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 3,
+        "fields": {
+            "customer_id": 2,
+            "event_id": 7,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 4,
+        "fields": {
+            "customer_id": 7,
+            "event_id": 2,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 5,
+        "fields": {
+            "customer_id": 7,
+            "event_id": 3,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 6,
+        "fields": {
+            "customer_id": 6,
+            "event_id": 6,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 7,
+        "fields": {
+            "customer_id": 10,
+            "event_id": 9,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 8,
+        "fields": {
+            "customer_id": 15,
+            "event_id": 11,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 9,
+        "fields": {
+            "customer_id": 16,
+            "event_id": 9,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 10,
+        "fields": {
+            "customer_id": 16,
+            "event_id": 7,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 11,
+        "fields": {
+            "customer_id": 18,
+            "event_id": 3,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 12,
+        "fields": {
+            "customer_id": 13,
+            "event_id": 2,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 13,
+        "fields": {
+            "customer_id": 14,
+            "event_id": 1,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    },
+    {
+        "model": "mainapp.eventregistrations",
+        "pk": 14,
+        "fields": {
+            "customer_id": 12,
+            "event_id": 10,
+            "event_datetime": "2020-10-09",
+            "booking_made_date": "2020-10-08",
+            "booking_seat_count": 500
+        }
+    }
+]

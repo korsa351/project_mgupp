@@ -1,0 +1,79 @@
+[
+    {
+        "model": "mainapp.refeventtypes",
+        "pk": 1,
+        "fields": {
+            "event_type_description": "Драма"
+        }
+    },
+    {
+        "model": "mainapp.refeventtypes",
+        "pk": 2,
+        "fields": {
+            "event_type_description": "Комедия"
+        }
+    },
+    {
+        "model": "mainapp.refeventtypes",
+        "pk": 3,
+        "fields": {
+            "event_type_description": "Мелодрама"
+        }
+    },
+    {
+        "model": "mainapp.refeventtypes",
+        "pk": 4,
+        "fields": {
+            "event_type_description": "Монодрама"
+        }
+    },
+    {
+        "model": "mainapp.refeventtypes",
+        "pk": 5,
+        "fields": {
+            "event_type_description": "Фарс"
+        }
+    },
+    {
+        "model": "mainapp.refeventtypes",
+        "pk": 6,
+        "fields": {
+            "event_type_description": "Феерия"
+        }
+    },
+    {
+        "model": "mainapp.refeventtypes",
+        "pk": 7,
+        "fields": {
+            "event_type_description": "Мюзикл"
+        }
+    },
+    {
+        "model": "mainapp.refeventtypes",
+        "pk": 8,
+        "fields": {
+            "event_type_description": "Водевиль"
+        }
+    },
+    {
+        "model": "mainapp.refeventtypes",
+        "pk": 9,
+        "fields": {
+            "event_type_description": "Мистерия"
+        }
+    },
+    {
+        "model": "mainapp.refeventtypes",
+        "pk": 10,
+        "fields": {
+            "event_type_description": "Соти"
+        }
+    },
+    {
+        "model": "mainapp.refeventtypes",
+        "pk": 11,
+        "fields": {
+            "event_type_description": "Трагикомедия"
+        }
+    }
+]
