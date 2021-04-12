@@ -1,0 +1,15 @@
+{% extends 'mainapp/wrapper.html' %}
+
+{% block content %}
+
+{% include 'mainapp/title.html' %}
+
+<div class="registrate">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Registrate</button>
+    </form>
+</div>
+
+{% endblock %}

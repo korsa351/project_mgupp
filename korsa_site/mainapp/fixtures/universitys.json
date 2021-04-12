@@ -1,0 +1,114 @@
+[
+    {
+      "model": "mainapp.University",
+      "pk": 3,
+      "fields": {
+        "University_Name": "МГТУ им. Н.Э. Баумана",
+        "Other_Details": "Московский государственный технический университет имени Н.Э. Баумана"
+      }
+    },
+    {
+        "model": "mainapp.University",
+        "pk": 4,
+        "fields": {
+          "University_Name": "РГГУ",
+          "Other_Details": "Российский государственный гуманитарный университет"
+        }
+      },
+      {
+        "model": "mainapp.University",
+        "pk": 5,
+        "fields": {
+          "University_Name": "НИУ МГСУ",
+          "Other_Details": "Национальный исследовательский Московский государственный строительный университет"
+        }
+      },
+      {
+        "model": "mainapp.University",
+        "pk": 6,
+        "fields": {
+          "University_Name": "РУДН",
+          "Other_Details": "Российский университет дружбы народов"
+        }
+      },
+      {
+        "model": "mainapp.University",
+        "pk": 7,
+        "fields": {
+          "University_Name": "НИУ ВШЭ",
+          "Other_Details": "Национальный исследовательский университет «Высшая школа экономики»"
+        }
+      },
+      {
+        "model": "mainapp.University",
+        "pk": 8,
+        "fields": {
+          "University_Name": "РЭУ им. Г.В. Плеханова",
+          "Other_Details": "Российский экономический университет имени Г.В. Плеханова"
+        }
+      },
+      {
+        "model": "mainapp.University",
+        "pk": 9,
+        "fields": {
+          "University_Name": "РТУ МИРЭА",
+          "Other_Details": "МИРЭА – Российский технологический университет"
+        }
+      },
+      {
+        "model": "mainapp.University",
+        "pk": 10,
+        "fields": {
+          "University_Name": "МГМСУ им. А.И. Евдокимова Минздрава России",
+          "Other_Details": "Московский государственный медико-стоматологический университет им. А.И. Евдокимова"
+        }
+      },
+      {
+        "model": "mainapp.University",
+        "pk": 11,
+        "fields": {
+          "University_Name": "МГПУ",
+          "Other_Details": "Московский городской педагогический университет"
+        }
+      },
+      {
+        "model": "mainapp.University",
+        "pk": 12,
+        "fields": {
+          "University_Name": "РУТ (МИИТ)",
+          "Other_Details": "Российский университет транспорта (МИИТ)"
+        }
+      },
+      {
+        "model": "mainapp.University",
+        "pk": 13,
+        "fields": {
+          "University_Name": "Первый МГМУ им. И.М. Сеченова Минздрава России (Сеченовский Университет)",
+          "Other_Details": "Первый Московский государственный медицинский университет имени И.М. Сеченова"
+        }
+      },
+      {
+        "model": "mainapp.University",
+        "pk": 14,
+        "fields": {
+          "University_Name": "Финансовый университет при Правительстве РФ",
+          "Other_Details": "Финансовый университет при Правительстве РФ"
+        }
+      },
+      {
+        "model": "mainapp.University",
+        "pk": 15,
+        "fields": {
+          "University_Name": "МАДИ",
+          "Other_Details": "Московский автомобильно-дорожный государственный технический университет"
+        }
+      },
+      {
+        "model": "mainapp.University",
+        "pk": 16,
+        "fields": {
+          "University_Name": "МГУПП",
+          "Other_Details": "Московский государственный университет пищевых производств"
+        }
+      }
+  ]

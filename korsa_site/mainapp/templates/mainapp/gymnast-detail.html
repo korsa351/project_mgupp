@@ -1,0 +1,37 @@
+{% extends 'mainapp/wrapper.html' %}
+
+
+{% block content %}
+{% if user.is_authenticated %}
+
+{% include 'mainapp/title.html' %}
+
+<div class="parent-card-detail">
+    <div class="callout large child-card-detail">
+        <div class="image-detail">
+            <img class="gymnast-photo-detail" src="{{ gymnast.Gymnast_Photo.url }}">
+        </div>
+        <div class="text">
+            <h5>{{ gymnast.Gymnast_Name }}</h5>
+            <p>
+                <span class="font-weight-bold">Hometown:</span> {{ gymnast.Gymnast_Hometown }}<br>
+                <span class="font-weight-bold">Address:</span> {{ gymnast.Gymnast_Address }}<br>
+                <span class="font-weight-bold">University:</span> {{ gymnast.University_ID }}<br>
+                <span class="font-weight-bold">Other details:</span> 
+                {% if gymnast.Other_Gymnast_Details|length > 0 %}
+                {{ gymnast.Other_Gymnast_Details }}
+                {% else %}
+                None<br>
+                {% endif %}
+            </p>
+            <a href="{% url 'view_gymnasts' %}"><i class="fa fa-reply-all" aria-hidden="true"></i>&#160;Back</a>
+        </div>
+    </div>
+</div>
+
+{% else %}
+
+{% include 'mainapp/guest-notice.html' %}
+
+{% endif %}
+{% endblock %}

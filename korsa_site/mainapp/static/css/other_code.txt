@@ -1,0 +1,12 @@
+    <div class="card-deck">
+        {% for gymnast in gymnasts_list %}
+        <div class="card card_size">
+            <img class="card-img-top gymnast_photo" src="{{ gymnast.Gymnast_Photo.url }}" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">{{ gymnast.Gymnast_Name }}</h4>
+              <p class="card-text">{{ gymnast.Gymnast_Hometown }}</p>
+              <a href="#!" class="btn btn-primary">Details</a>
+            </div>
+          </div>
+        {% endfor %}
+    </div>

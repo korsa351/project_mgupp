@@ -1,9 +1,40 @@
 {% extends 'mainapp/wrapper.html' %}
-
 {% block content %}
+{% if not user.is_authenticated %}
 
-    <div class="alert alert-info" role="alert">
-        <strong>Проверка!</strong> 1...2...3...4
-    </div>
+{% include 'mainapp/guest-notice.html' %}
 
+{% else %}
+
+{% include 'mainapp/title.html' %}
+
+  <div class="div-table">
+    <table class="table-css">
+      <thead>
+        <tr class="table-header">
+          <th>№</th>
+          <th>First Name</th>
+          <th>Hometown</th>
+          <th>Address</th>
+          <th>University</th>
+          <th>Individual Number</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for gymnast in gymnasts_list %}
+        <tr>
+          <td>{{ forloop.counter }}</td>
+          <td>{{ gymnast.Gymnast_Name }}</td>
+          <td>{{ gymnast.Gymnast_Hometown }}</td>
+          <td>{{ gymnast.Gymnast_Address }}</td>
+          <td>{{ gymnast.University_ID }}</td>
+          <td>{{ gymnast.id }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+
+{% endif %}
 {% endblock %}

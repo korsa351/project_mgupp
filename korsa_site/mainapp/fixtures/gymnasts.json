@@ -1,0 +1,158 @@
+[
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 7,
+      "fields": {
+        "Gymnast_Name": "Иван",
+        "Gymnast_Hometown": "Сочи",
+        "Gymnast_Address": 5,
+        "Gymnast_Photo": "photos/7.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 4
+      }
+    },
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 8,
+      "fields": {
+        "Gymnast_Name": "Александр",
+        "Gymnast_Hometown": "Красноярск",
+        "Gymnast_Address": 11,
+        "Gymnast_Photo": "photos/8.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 8
+      }
+    },
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 9,
+      "fields": {
+        "Gymnast_Name": "Кирилл",
+        "Gymnast_Hometown": "Волгоград",
+        "Gymnast_Address": 7,
+        "Gymnast_Photo": "photos/9.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 7
+      }
+    },
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 10,
+      "fields": {
+        "Gymnast_Name": "Ольга",
+        "Gymnast_Hometown": "Санкт-Петербург",
+        "Gymnast_Address": 8,
+        "Gymnast_Photo": "photos/10.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 9
+      }
+    },
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 11,
+      "fields": {
+        "Gymnast_Name": "Ирина",
+        "Gymnast_Hometown": "Тула",
+        "Gymnast_Address": 10,
+        "Gymnast_Photo": "photos/11.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 16
+      }
+    },
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 12,
+      "fields": {
+        "Gymnast_Name": "Дмитрий",
+        "Gymnast_Hometown": "Москва",
+        "Gymnast_Address": 15,
+        "Gymnast_Photo": "photos/12.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 16
+      }
+    },
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 13,
+      "fields": {
+        "Gymnast_Name": "Евгения",
+        "Gymnast_Hometown": "Тверь",
+        "Gymnast_Address": 17,
+        "Gymnast_Photo": "photos/13.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 15
+      }
+    },
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 14,
+      "fields": {
+        "Gymnast_Name": "Александра",
+        "Gymnast_Hometown": "Омск",
+        "Gymnast_Address": 8,
+        "Gymnast_Photo": "photos/14.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 6
+      }
+    },
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 15,
+      "fields": {
+        "Gymnast_Name": "Артём",
+        "Gymnast_Hometown": "Тула",
+        "Gymnast_Address": 6,
+        "Gymnast_Photo": "photos/15.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 7
+      }
+    },
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 16,
+      "fields": {
+        "Gymnast_Name": "Даниил",
+        "Gymnast_Hometown": "Владивосток",
+        "Gymnast_Address": 4,
+        "Gymnast_Photo": "photos/16.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 11
+      }
+    },
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 17,
+      "fields": {
+        "Gymnast_Name": "Константин",
+        "Gymnast_Hometown": "Санкт-Петербург",
+        "Gymnast_Address": 4,
+        "Gymnast_Photo": "photos/17.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 14
+      }
+    },
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 18,
+      "fields": {
+        "Gymnast_Name": "Анастасия",
+        "Gymnast_Hometown": "Москва",
+        "Gymnast_Address": 11,
+        "Gymnast_Photo": "photos/18.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 7
+      }
+    },
+    {
+      "model": "mainapp.Gymnasts",
+      "pk": 19,
+      "fields": {
+        "Gymnast_Name": "Татьяна",
+        "Gymnast_Hometown": "Уфа",
+        "Gymnast_Address": 16,
+        "Gymnast_Photo": "photos/19.jpg",
+        "Other_Gymnast_Details": "",
+        "University_ID": 4
+      }
+    }
+  ]

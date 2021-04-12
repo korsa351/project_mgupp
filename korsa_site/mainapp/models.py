@@ -4,7 +4,6 @@ from django.urls import reverse
 
 
 #Start DB University Gymnastics
-
 class Meets(models.Model):
     Meet_Date = models.DateField('Дата встречи')
     Meet_Location = models.TextField('Место встречи')
@@ -59,7 +58,7 @@ class Gymnasts(models.Model):
     Gymnast_Name = models.CharField('Имя гимнаста', max_length=50)
     Gymnast_Hometown = models.CharField('Родной город', max_length=50)
     Gymnast_Address = models.ForeignKey(Addresses, on_delete=models.CASCADE)
-    Gymnast_Photo = models.ImageField('Фото', upload_to='photos')
+    Gymnast_Photo = models.ImageField('Фото', upload_to='photos', blank=True)
     Other_Gymnast_Details = models.TextField('Детали', blank=True)
     University_ID = models.ForeignKey(University, on_delete=models.CASCADE)
     
