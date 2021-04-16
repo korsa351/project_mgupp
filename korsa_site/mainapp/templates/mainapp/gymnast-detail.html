@@ -24,14 +24,18 @@
                 None<br>
                 {% endif %}
             </p>
+            {% if request.META.HTTP_REFERER|length > 1 %}
+            <a href="{{ request.META.HTTP_REFERER }}"><i class="fa fa-reply-all" aria-hidden="true"></i>&#160;Back</a>
+            {% else %}
             <a href="{% url 'view_gymnasts' %}"><i class="fa fa-reply-all" aria-hidden="true"></i>&#160;Back</a>
+            {% endif %}
         </div>
     </div>
 </div>
 
 {% else %}
 
-{% include 'mainapp/guest-notice.html' %}
+{% include 'mainapp/alert-notice.html' %}
 
 {% endif %}
 {% endblock %}

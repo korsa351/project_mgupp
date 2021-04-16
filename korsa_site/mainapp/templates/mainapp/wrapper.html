@@ -73,10 +73,10 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'gymnasts' %}">List of Gymnasts</a>
+          <a class="nav-link {% if '/gymnasts/' == request.path %}active{% endif %}" href="{% url 'gymnasts' %}">List of Gymnasts</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'view_gymnasts' %}">View</a>
+          <a class="nav-link {% if '/view/' == request.path %}active{% endif %}" href="{% url 'view_gymnasts' %}">View</a>
         </li>
         {% if user.is_superuser %}
         <li class="nav-item">
@@ -85,12 +85,29 @@
         <li class="nav-item">
           <a class="nav-link" href="{% url 'test' %}">Test</a>
         </li>
+        {% endif %}
+        {% if not user.is_authenticated %}
         <div class="parent-auth">
           <li class="nav-item register">
-            <a class="nav-link" href="{% url 'register' %}">Sign up</a>
+            <a class="nav-link {% if '/registration/' == request.path %}active{% endif %}" href="{% url 'registration' %}">Sign up</a>
           </li>
           <li class="nav-item login">
-            <a class="nav-link" href="#">Sign in</a>
+            <a class="nav-link {% if '/login/' == request.path %}active{% endif %}" href="{% url 'login' %}">Sign in</a>
+          </li>
+        </div>
+        {% else %}
+        <div class="parent-auth">
+          {% if user.get_username|length > 10 %}
+          <li class="nav-item logout">
+            <p class="logout" title="{{ user.get_username }}">Hello, {{ user.get_username|truncatechars:6 }}!</p>
+          </li>
+          {% else %}
+          <li class="nav-item logout">
+            <p class="logout">Hello, {{ user.get_username }}!</p>
+          </li>
+          {% endif %}
+          <li class="nav-item logout">
+            <a class="nav-link" href="{% url 'logout' %}">(<span style="text-decoration: underline;">Logout</span>)</a>
           </li>
         </div>
         {% endif %}
