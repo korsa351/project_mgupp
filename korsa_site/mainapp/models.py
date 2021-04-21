@@ -57,10 +57,10 @@ class Addresses(models.Model):
 class Gymnasts(models.Model):
     Gymnast_Name = models.CharField('Имя гимнаста', max_length=50)
     Gymnast_Hometown = models.CharField('Родной город', max_length=50)
-    Gymnast_Address = models.ForeignKey(Addresses, on_delete=models.CASCADE)
-    Gymnast_Photo = models.ImageField('Фото', upload_to='photos', blank=True)
+    Gymnast_Address = models.ForeignKey(Addresses, on_delete=models.CASCADE, verbose_name='Адрес гимнаста')
+    Gymnast_Photo = models.ImageField('Фото', upload_to='photos')
     Other_Gymnast_Details = models.TextField('Детали', blank=True)
-    University_ID = models.ForeignKey(University, on_delete=models.CASCADE)
+    University_ID = models.ForeignKey(University, on_delete=models.CASCADE, verbose_name='Университет')
     
     class Meta:
         verbose_name = "Гимнаст"
@@ -68,3 +68,9 @@ class Gymnasts(models.Model):
 
     def __str__(self) -> str:
         return self.Gymnast_Name
+
+    def get_absolute_url(self):
+        if self.id:
+            return f'/gymnast={self.id}'
+        else:
+            pass

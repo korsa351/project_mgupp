@@ -12,4 +12,7 @@ urlpatterns = [
     path('registration/', views.RegisterUser.as_view(), name="registration"),
     path('login/', views.LoginUser.as_view(), name="login"),
     path('logout/', views.Logout.as_view(), name="logout"),
+    path('add-gymnast/', views.GymnastAdd.as_view(), name="addgymnast"),
+    path('gymnast=<int:pk>/update/', views.GymnastUpd.as_view(), name='gymnastupd'),
+    re_path('gymnast=<int:pk>/', views.GymnastDelete.as_view(), name="gymnast_delete"),
 ]

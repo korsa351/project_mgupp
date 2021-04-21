@@ -1,0 +1,23 @@
+{% extends 'mainapp/wrapper.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+
+{% include 'mainapp/title.html' %}
+
+<div class="form_add_upd_gymnast">
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-success">Add</button>
+    </form>
+</div>
+
+{% else %}
+
+{% include 'mainapp/alert-notice.html' %}
+
+{% endif %}
+
+{% endblock %}

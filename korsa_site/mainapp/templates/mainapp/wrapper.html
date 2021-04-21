@@ -78,6 +78,11 @@
         <li class="nav-item">
           <a class="nav-link {% if '/view/' == request.path %}active{% endif %}" href="{% url 'view_gymnasts' %}">View</a>
         </li>
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link {% if '/add-gymnast/' == request.path %}active{% endif %}" href="{% url 'addgymnast' %}">Add a gymnast</a>
+        </li>
+        {% endif %}
         {% if user.is_superuser %}
         <li class="nav-item">
           <a class="nav-link" href="/admin/">Admin Panel</a>

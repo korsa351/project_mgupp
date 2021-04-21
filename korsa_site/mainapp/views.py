@@ -5,8 +5,8 @@ from django.forms.forms import Form
 from django.shortcuts import redirect, render
 from django.urls.base import reverse_lazy
 from .models import *
-from django.views.generic import ListView, DetailView, CreateView
-from .forms import LoginUserForm, RegisterUserForm
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from .forms import AddGymnastForm, LoginUserForm, RegisterUserForm, UpdateGymnastForm
 from django.contrib.auth.models import User
 
 
@@ -17,6 +17,7 @@ def index(request):
     }
     context["other"]=other
     return render(request, 'mainapp/index.html', context)
+
 
 def test(request):
     context={}
@@ -81,7 +82,6 @@ class RegisterUser(CreateView):
     template_name="mainapp/register.html"
     success_url=reverse_lazy('index')
     success_msg="Successful registration!"
-    form=RegisterUserForm
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -121,3 +121,40 @@ class LoginUser(LoginView):
 
 class Logout(LogoutView):
     next_page=reverse_lazy('index')
+
+
+class GymnastAdd(CreateView):
+    model=Gymnasts
+    template_name="mainapp/addgymnast.html"
+    success_url=reverse_lazy('view_gymnasts')
+    form_class=AddGymnastForm
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        other = {
+            "title":"Add a gymnast",
+            'alert':"Access denied!",
+        }
+        context["other"] = other
+        return context
+
+
+class GymnastUpd(UpdateView):
+    model=Gymnasts
+    template_name="mainapp/updgymnast.html"
+    form_class=UpdateGymnastForm
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        other = {
+            "title":"Update a gymnast",
+            'alert':"Access denied!",
+        }
+        context["other"] = other
+        return context
+
+
+class GymnastDelete(DeleteView):
+    model=Gymnasts
+    template_name="mainapp/delete-gymnast.html"
+    success_url= '/view/'

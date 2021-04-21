@@ -1,0 +1,16 @@
+{% block content %}
+
+<form method="POST">
+    {% csrf_token %}
+    <div class="overlay" id="delete-modal">
+      <div class="flex-popap">
+        <div class="alert alert-danger alert-dismissible fade show">
+          <p class="text-delete">Are you sure you want to remove this gymnast?</p>
+          <button type="submit" class="btn btn-danger">Yes</button>
+          <button type="button" class="btn btn-outline-primary close_popap">No</button>
+        </div>
+      </div>
+  </div>
+</form>
+
+{% endblock %}
