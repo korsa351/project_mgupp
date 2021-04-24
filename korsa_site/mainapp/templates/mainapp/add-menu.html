@@ -1,0 +1,13 @@
+{% block menu %}
+
+<div id="menu">
+    <ul class="menu">
+        <li class="{% if '/add/gymnast/' == request.path %}is-active{% endif %}"><a class="add_menu" href="{% url 'add-gymnast' %}">Gymnast</a></li>
+        <li class="{% if '/add/address/' == request.path %}is-active{% endif %}"><a class="add_menu" href="{% url 'add-address' %}">Address</a></li>
+        <li class="{% if '/add/university/' == request.path %}is-active{% endif %}"><a class="add_menu" href="{% url 'add-university' %}">University</a></li>
+        <li class="{% if '/add/meet/' == request.path %}is-active{% endif %}"><a class="add_menu" href="{% url 'add-meet' %}">Meet</a></li>
+        <li class="{% if '/add/university-meet/' == request.path %}is-active{% endif %}"><a class="add_menu" href="{% url 'add-university-meet' %}">University meet</a></li>
+    </ul>
+</div>
+
+{% endblock %}

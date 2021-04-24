@@ -1,6 +1,5 @@
 {% extends 'mainapp/wrapper.html' %}
 
-
 {% block content %}
 {% if user.is_authenticated %}
 
@@ -26,12 +25,14 @@
             </p>
             <div class="navigate_first"><a href="{% url 'view_gymnasts' %}"><i class="fa fa-reply-all" aria-hidden="true"></i>&#160;Back</a></div>
             <div class="navigate"><a href="update/"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&#160;Update</a></div>
-            <div class="navigate"><a style="color: #dc3545;" href="#" onclick="show_popap('delete-modal')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&#160;Delete</a></div>
+            <div class="navigate"><a style="color: #dc3545;" onclick="show_popap('delete-modal')"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>&#160;Delete</a></div>
         </div>
     </div>
 </div>
 
+{% block delete %}
 {% include 'mainapp/delete-gymnast.html' %}
+{% endblock %}
 
 {% else %}
 

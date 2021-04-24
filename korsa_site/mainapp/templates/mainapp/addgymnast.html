@@ -4,6 +4,10 @@
 
 {% if user.is_authenticated %}
 
+{% block menu %}
+{% include 'mainapp/add-menu.html' %}
+{% endblock %}
+
 {% include 'mainapp/title.html' %}
 
 <div class="form_add_upd_gymnast">

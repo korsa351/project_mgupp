@@ -1,0 +1,14 @@
+{% extends 'mainapp/wrapper.html' %}
+
+{% block content %}
+{% if user.is_authenticated %}
+
+{% block menu %}
+{% include 'mainapp/add-menu.html' %}
+{% endblock %}
+
+{% else %}
+{% include 'mainapp/alert-notice.html' %}
+{% endif %}
+
+{% endblock %}

@@ -80,7 +80,7 @@
         </li>
         {% if user.is_authenticated %}
         <li class="nav-item">
-          <a class="nav-link {% if '/add-gymnast/' == request.path %}active{% endif %}" href="{% url 'addgymnast' %}">Add a gymnast</a>
+          <a class="nav-link {% if '/add/' == request.path %}active{% endif %}" href="{% url 'add' %}">Add</a>
         </li>
         {% endif %}
         {% if user.is_superuser %}

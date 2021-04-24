@@ -6,7 +6,7 @@ from django.shortcuts import redirect, render
 from django.urls.base import reverse_lazy
 from .models import *
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from .forms import AddGymnastForm, LoginUserForm, RegisterUserForm, UpdateGymnastForm
+from .forms import AddGymnastForm, LoginUserForm, RegisterUserForm, UpdateGymnastForm, AddAddressForm, AddUniversityForm, AddMeetForm, AddUniversityMeetForm
 from django.contrib.auth.models import User
 
 
@@ -29,6 +29,16 @@ def test(request):
     return render(request, 'mainapp/test.html', context)
 
 
+def add(request):
+    context={}
+    other={
+        "title":"Add",
+        "alert":"Access denied!"
+    }
+    context["other"]=other
+    return render(request, 'mainapp/add.html', context)
+
+
 class GymnastsTable(ListView):
     model=Gymnasts
     context_object_name='gymnasts_list'
@@ -48,7 +58,7 @@ class GymnastsView(ListView):
     model=Gymnasts
     context_object_name='gymnasts_list'
     template_name='mainapp/view.html'
-    paginate_by=5
+    paginate_by=6
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -126,13 +136,76 @@ class Logout(LogoutView):
 class GymnastAdd(CreateView):
     model=Gymnasts
     template_name="mainapp/addgymnast.html"
-    success_url=reverse_lazy('view_gymnasts')
+    success_url=reverse_lazy('add')
     form_class=AddGymnastForm
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         other = {
             "title":"Add a gymnast",
+            'alert':"Access denied!",
+        }
+        context["other"] = other
+        return context
+
+
+class AddressAdd(CreateView):
+    model=Addresses
+    template_name="mainapp/addaddress.html"
+    success_url=reverse_lazy('add')
+    form_class=AddAddressForm
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        other = {
+            "title":"Add address",
+            'alert':"Access denied!",
+        }
+        context["other"] = other
+        return context
+
+
+class UniversityAdd(CreateView):
+    model=University
+    template_name="mainapp/adduniversity.html"
+    success_url=reverse_lazy('add')
+    form_class=AddUniversityForm
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        other = {
+            "title":"Add University",
+            'alert':"Access denied!",
+        }
+        context["other"] = other
+        return context
+
+
+class MeetAdd(CreateView):
+    model=Meets
+    template_name="mainapp/addmeet.html"
+    success_url=reverse_lazy('add')
+    form_class=AddMeetForm
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        other = {
+            "title":"Add meet",
+            'alert':"Access denied!",
+        }
+        context["other"] = other
+        return context
+
+class UniversityMeetAdd(CreateView):
+    model=University_Meet_Participation
+    template_name="mainapp/adduniversitymeet.html"
+    success_url=reverse_lazy('add')
+    form_class=AddUniversityMeetForm
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        other = {
+            "title":"Add University meet",
             'alert':"Access denied!",
         }
         context["other"] = other
@@ -156,5 +229,13 @@ class GymnastUpd(UpdateView):
 
 class GymnastDelete(DeleteView):
     model=Gymnasts
-    template_name="mainapp/delete-gymnast.html"
-    success_url= '/view/'
+    template_name="mainapp/delete-submit.html"
+    success_url= ('/view/')
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        other = {
+            'alert':"Access denied!",
+        }
+        context["other"] = other
+        return context

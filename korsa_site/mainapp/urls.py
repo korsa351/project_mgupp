@@ -1,3 +1,4 @@
+from mainapp.forms import AddUniversityMeetForm
 from django.conf.urls import url
 from django.contrib import admin
 from django.urls import path, re_path
@@ -12,7 +13,12 @@ urlpatterns = [
     path('registration/', views.RegisterUser.as_view(), name="registration"),
     path('login/', views.LoginUser.as_view(), name="login"),
     path('logout/', views.Logout.as_view(), name="logout"),
-    path('add-gymnast/', views.GymnastAdd.as_view(), name="addgymnast"),
+    path('add/', views.add, name="add"),
+    path('add/gymnast/', views.GymnastAdd.as_view(), name="add-gymnast"),
     path('gymnast=<int:pk>/update/', views.GymnastUpd.as_view(), name='gymnastupd'),
-    re_path('gymnast=<int:pk>/', views.GymnastDelete.as_view(), name="gymnast_delete"),
+    path('gymnast=<int:pk>/delete-submit/', views.GymnastDelete.as_view(), name="gymnast_delete_submit"),
+    path('add/address/', views.AddressAdd.as_view(), name="add-address"),
+    path('add/university/', views.UniversityAdd.as_view(), name="add-university"),
+    path('add/meet/', views.MeetAdd.as_view(), name="add-meet"),
+    path('add/university-meet/', views.UniversityMeetAdd.as_view(), name="add-university-meet"),
 ]
