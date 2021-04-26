@@ -244,19 +244,28 @@ class GymnastDelete(DeleteView):
 class GymnastSearch(ListView):
     context_object_name="gymnasts_list"
     template_name="mainapp/search.html"
-    paginate_by= 1
+    paginate_by= 6
 
     def get_queryset(self):
-        Gymnast_Name=self.request.GET.get('s')
-        return Gymnasts.objects.filter(Gymnast_Name)
+        object_filter=self.request.GET.get('s')
+        global flag
+        if object_filter:
+            flag=True
+            return Gymnasts.objects.filter(Gymnast_Name__icontains=object_filter)
+        else:
+            flag=False
+            return Gymnasts.objects.all()
 
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         other = {
+            "flag": flag,
             "title":"Search",
             "alert":"Oh, No!\n Sign in to view this page",
         }
         context["other"] = other
+        context["s"]=f"s={self.request.GET.get('s')}&"
+        context["t"]=self.request.GET.get('s')
         return context
     

@@ -2,7 +2,11 @@
 
     <div class="parent_title">
         <div class="children_title">
+          {% if other.flag %}
+          {{ other.title }} filter - {{ t }}
+          {% else %}
           {{ other.title }}
+          {% endif %}
         </div>
     </div>
 
