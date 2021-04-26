@@ -21,4 +21,5 @@ urlpatterns = [
     path('add/university/', views.UniversityAdd.as_view(), name="add-university"),
     path('add/meet/', views.MeetAdd.as_view(), name="add-meet"),
     path('add/university-meet/', views.UniversityMeetAdd.as_view(), name="add-university-meet"),
+    path('search/', views.GymnastSearch.as_view(), name="search"),
 ]

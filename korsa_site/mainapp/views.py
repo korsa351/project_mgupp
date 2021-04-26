@@ -239,3 +239,24 @@ class GymnastDelete(DeleteView):
         }
         context["other"] = other
         return context
+
+
+class GymnastSearch(ListView):
+    context_object_name="gymnasts_list"
+    template_name="mainapp/search.html"
+    paginate_by= 1
+
+    def get_queryset(self):
+        Gymnast_Name=self.request.GET.get('s')
+        return Gymnasts.objects.filter(Gymnast_Name)
+
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        other = {
+            "title":"Search",
+            "alert":"Oh, No!\n Sign in to view this page",
+        }
+        context["other"] = other
+        return context
+    

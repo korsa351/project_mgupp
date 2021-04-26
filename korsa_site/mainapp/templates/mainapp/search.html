@@ -1,0 +1,49 @@
+{% extends 'mainapp/wrapper.html' %}
+{% block content %}
+{% if user.is_authenticated %}
+
+{% include 'mainapp/title.html' %}
+
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x small-up-1 medium-up-2 large-up-3">
+      {% for gymnast in gymnasts_list %}
+        <div class="cell">
+          <div class="card">
+            <img class="gymnast_photo" src="{{ gymnast.Gymnast_Photo.url }}" alt="Photo of the Gymnast">
+            <div class="card-section">
+              <h4>{{ gymnast.Gymnast_Name }}</h4>
+              <h5>{{ gymnast.Gymnast_Hometown }}</h5>
+              <h6>{{ gymnast.University_ID }}</h6>
+              <button onclick="window.location.href = '/gymnast={{ gymnast.id }}';" type="button" class="btn btn-primary">Details</button>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+<div class="search-form">
+    <h3 class="search-title">Enter the gymnast's name</h3>
+    <form method="get">
+        <div class="search row">
+          <div class="col-sm-10">
+            <input type="text" name="s" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button type="submit" class="btn btn-primary">Search</button>
+          </div>
+        </div>
+    </form>
+</div>
+
+{% include 'mainapp/pagination.html' %}
+
+{% else %}
+
+{% include 'mainapp/alert-notice.html' %}
+
+{% endif %}
+{% endblock %}
+  
